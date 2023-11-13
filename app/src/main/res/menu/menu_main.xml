@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_progress"
+        android:title="@string/menu_main_progress"
+        android:icon="@drawable/up_line" />
+    <item
+        android:id="@+id/menu_home"
+        android:title="@string/menu_main_home"
+        android:icon="@drawable/home_line" />
+    <item
+        android:id="@+id/menu_profile"
+        android:title="@string/menu_main_profile"
+        android:icon="@drawable/user_line" />
+</menu>
