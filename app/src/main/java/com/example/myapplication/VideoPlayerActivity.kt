@@ -19,5 +19,9 @@ class VideoPlayerActivity : AppCompatActivity() {
 
         binding.videoView.setMediaController(mediaController)
         binding.videoView.setVideoURI(Uri.parse("android.resource://${packageName}/${R.raw.video}"))
+
+        binding.buttonPrev.setOnClickListener {
+            finish()
+        }
     }
 }

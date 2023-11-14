@@ -2,6 +2,8 @@ package repositories
 
 import models.Category
 import models.Collection
+import models.CollectionFile
+import models.CollectionFileType
 import models.Subcategory
 
 class CategoryRepository {
@@ -16,12 +18,16 @@ class CategoryRepository {
                     "Diminuir o Stress",
                     "destaque01",
                     listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection Diminuir o Stress 1", null, listOf<CollectionFile>(
+                            CollectionFile(1, "Audio 1", "file", CollectionFileType.audio),
+                            CollectionFile(2, "Audio 2", "file", CollectionFileType.audio),
+                            CollectionFile(3, "Video 1", "file", CollectionFileType.video),
+                        )),
+                        Collection(2, "Collection Diminuir o Stress 2", null, null),
+                        Collection(3, "Collection Diminuir o Stress 3", null, null),
+                        Collection(4, "Collection Diminuir o Stress 4", null, null),
+                        Collection(5, "Collection Diminuir o Stress 5", null, null),
+                        Collection(6, "Collection Diminuir o Stress 6", null, null),
                     )
                 ),
                 Subcategory(
@@ -29,12 +35,12 @@ class CategoryRepository {
                     "Controlar a Ansiedade",
                     "destaque02",
                     listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
                 Subcategory(
@@ -42,12 +48,12 @@ class CategoryRepository {
                     "Ter uma Vida Equilibrada",
                     "destaque03",
                     listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
                 Subcategory(
@@ -55,12 +61,12 @@ class CategoryRepository {
                     "Dormir melhor",
                     "destaque04",
                     listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
                 Subcategory(
@@ -68,12 +74,12 @@ class CategoryRepository {
                     "Amar e perdoar",
                     "destaque05",
                     listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
                 Subcategory(
@@ -81,12 +87,12 @@ class CategoryRepository {
                     "Meditação para crianças",
                     "destaque06",
                     listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
             )
@@ -98,12 +104,12 @@ class CategoryRepository {
             listOf<Subcategory>(
                 Subcategory(
                     1, "Respiração profunda guiada", "respiracao01", listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
             )
@@ -115,42 +121,42 @@ class CategoryRepository {
             listOf(
                 Subcategory(
                     1, "Chuva", "sons01", listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
                 Subcategory(
                     1, "Oceano", "sons02", listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
                 Subcategory(
                     1, "Animais", "sons03", listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
                 Subcategory(
                     1, "Floresta", "sons04", listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
             )
@@ -162,12 +168,12 @@ class CategoryRepository {
             listOf<Subcategory>(
                 Subcategory(
                     1, "Sessão mindfulness guiada", "mindfulness", listOf<Collection>(
-                        Collection(1, "Collection com um nome grande 1", ""),
-                        Collection(2, "Collection com um nome grande 2", ""),
-                        Collection(3, "Collection com um nome grande 3", ""),
-                        Collection(4, "Collection com um nome grande 4", ""),
-                        Collection(5, "Collection com um nome grande 5", ""),
-                        Collection(6, "Collection com um nome grande 6", ""),
+                        Collection(1, "Collection com um nome grande 1", null, null),
+                        Collection(2, "Collection com um nome grande 2", null, null),
+                        Collection(3, "Collection com um nome grande 3", null, null),
+                        Collection(4, "Collection com um nome grande 4", null, null),
+                        Collection(5, "Collection com um nome grande 5", null, null),
+                        Collection(6, "Collection com um nome grande 6", null, null),
                     )
                 ),
             )

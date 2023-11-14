@@ -5,11 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".VideoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVideos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="start"
-        android:text="Video" />
-
+        android:layout_height="match_parent" />
 </FrameLayout>

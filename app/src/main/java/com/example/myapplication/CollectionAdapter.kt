@@ -40,7 +40,7 @@ class CollectionAdapter(private val collections: List<Collection>): Adapter<Coll
             val tab = dialogView.findViewById<TabLayout>(R.id.tabCollection)
             val view = dialogView.findViewById<ViewPager2>(R.id.tabCollectionView)
 
-            view.adapter = VPAdapter(holder.card.context as FragmentActivity);
+            view.adapter = VPAdapter(holder.card.context as FragmentActivity, collections[position]);
             TabLayoutMediator(tab, view) {
                 tab, position -> when(position) {
                     0 -> tab.text = "Áudios"

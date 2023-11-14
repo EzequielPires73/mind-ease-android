@@ -27,7 +27,7 @@
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/tabCollectionView"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
